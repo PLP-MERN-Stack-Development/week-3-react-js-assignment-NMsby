@@ -87,15 +87,15 @@ const Footer = () => {
                         {/* Social Links */}
                         <div className="flex space-x-4">
                             {socialLinks.map((social) => (
-
-                                key={social.name}
-                                href={social.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-                                aria-label={social.name}
+                                <a
+                                    key={social.name}
+                                    href={social.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                                    aria-label={social.name}
                                 >
-                            {social.icon}
+                                    {social.icon}
                                 </a>
                                 ))}
                         </div>
@@ -110,14 +110,14 @@ const Footer = () => {
                             <ul className="space-y-2">
                                 {section.links.map((link) => (
                                     <li key={link.name}>
-
-                                        href={link.href}
-                                        target={link.href.startsWith('http') ? '_blank' : '_self'}
-                                        rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                                        className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors"
+                                        <a
+                                            href={link.href}
+                                            target={link.href.startsWith('http') ? '_blank' : '_self'}
+                                            rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                                            className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm transition-colors"
                                         >
-                                        {link.name}
-                                    </a>
+                                            {link.name}
+                                        </a>
                                     </li>
                                     ))}
                             </ul>
