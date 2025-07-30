@@ -6,6 +6,7 @@ import Button from './components/Button'
 import TaskManager from './components/TaskManager'
 import ApiDataDisplay from './components/ApiDataDisplay'
 import About from './components/About'
+import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
     const { theme, toggleTheme, isDark } = useTheme()
@@ -204,14 +205,16 @@ function App() {
     }
 
     return (
-        <Layout
-            currentSection={activeSection}
-            onSectionChange={handleSectionChange}
-            toggleTheme={toggleTheme}
-            currentTheme={theme}
-        >
-            {renderContent()}
-        </Layout>
+        <ErrorBoundary>
+            <Layout
+                currentSection={activeSection}
+                onSectionChange={handleSectionChange}
+                toggleTheme={toggleTheme}
+                currentTheme={theme}
+            >
+                {renderContent()}
+            </Layout>
+        </ErrorBoundary>
     )
 }
 

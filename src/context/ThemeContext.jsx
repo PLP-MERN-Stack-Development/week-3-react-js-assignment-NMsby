@@ -44,7 +44,7 @@ export const ThemeProvider = ({ children }) => {
             // Create meta theme-color if it doesn't exist
             const meta = document.createElement('meta');
             meta.name = 'theme-color';
-            meta.content = theme === 'dark' ? '#1f2937' : '#ffffff';
+            meta.content = theme === 'dark' ? '#1f2937' : '#3B82F6';
             document.getElementsByTagName('head')[0].appendChild(meta);
         }
     }, [theme]);
