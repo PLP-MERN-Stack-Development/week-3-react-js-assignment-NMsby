@@ -6,11 +6,25 @@ A comprehensive React application built for PLP Academy's Week 3 MERN Stack assi
 
 ## 🚀 Live Demo
 
-🌐 **[View Live Application](https://deployment-url.vercel.app)**
+🌐 **[View Live Application](https://week-3-react-js-assignment-nm-lff7t57zm.vercel.app)**
 
 ## 📖 Overview
 
 PLP Task Manager is a feature-rich React application that demonstrates proficiency in modern frontend development practices. The application includes task management capabilities, API integration, responsive design, and a comprehensive theme system.
+
+## 📸 Screenshots
+
+### Home Page
+![Home Page](img.png)
+
+### Task Management
+![Task Management](img_1.png)
+
+### API Data Integration
+![API Data](img_2.png)
+
+### Light Mode
+![Light Mode](img_3.png)
 
 ### Key Features
 
