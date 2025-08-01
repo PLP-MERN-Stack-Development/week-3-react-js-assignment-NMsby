@@ -24,3 +24,8 @@ dist-ssr
 *.sw?
 
 .vercel
+
+# Documentation assets - keep screenshots
+!docs/
+!docs/images/
+!docs/images/screenshots/
